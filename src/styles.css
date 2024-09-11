@@ -1,0 +1,143 @@
+/* Temel stiller */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Responsive tasarım - Tabletler (max genişlik 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    input,
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive tasarım - Mobil cihazlar (max genişlik 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
